@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="answer" />
+    <button id="send-answer">제출</button>
+
+    <script>
+      let count = 0;
+
+      document.querySelector("#send-answer").addEventListener("click", () => {
+        count++;
+        let userAnswer = document.querySelector("#answer").value;
+
+        if (userAnswer === "1335") {
+          alert("성공!");
+        } else if (count === 3 && userAnswer != "1335") {
+          alert("멍청아 --");
+        } else if (userAnswer != "1335") {
+          alert(`땡! 오답입니다. 기회는 ${3 - count}번 남았습니다.`);
+        }
+      });
+
+      // 예금액 이자받기
+
+      /* var income = +prompt("예금액을 입력하시오.");
+      var futureIncome = 0;
+
+      function incomePlus(money) {
+        if (money < 50000) {
+          futureIncome = money * 1.15;
+        } else {
+          futureIncome = money * 1.2;
+        }
+        return futureIncome;
+      }
+
+      console.log(incomePlus(income)); */
+    </script>
+  </body>
+</html>

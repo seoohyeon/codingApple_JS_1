@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // function getAjob(sub1, sub2) {
+      //   if (sub1 + sub2 >= 120 && sub1 > 40 && sub2 > 40) {
+      //     console.log("합격");
+      //   } else {
+      //     console.log("불합격");
+      //   }
+      // }
+
+      // getAjob(70, 70);
+
+      // 커피 리필하기
+      var first = +prompt("커피량을 입력하시오.");
+      var drink = 0;
+
+      function coffeeRefill(coffee) {
+        drink = coffee * (2 / 3);
+        return drink;
+      }
+
+      console.log(coffeeRefill(first));
+    </script>
+  </body>
+</html>
